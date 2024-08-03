@@ -1,35 +1,36 @@
-body{background-color: rgb(61, 61, 61);    
+body{background-color: rgb(255, 255, 255);    
     font-family: 'Arial';
 }
 h1{font-size: 38px;
-    color: rgb(185, 185, 35);
+    color: rgb(20, 20, 20);
 }
 p{font-size: 20px;
-    color: rgb(236, 236, 16);
+    color: rgb(20, 20, 20);
 }
 h2{font-size: 33px;
-    color: rgb(124, 124, 71);
+    color: rgb(20, 20, 20);
 }
 h3{font-size: 29px;
-    color: #fdff71;
+    color: rgb(20, 20, 20);
 }
 h4{font-size: 23px;
-    color: rgb(233, 233, 158);
+    color: rgb(20, 20, 20);
 }
 td{font-size: 20px;
-    color: yellow;
+    color: rgb(20, 20, 20);
 }
 th{font-size: 20px;
-    color: rgb(150, 150, 15);
+    color: rgb(20, 20, 20);
 }
 li{font-size: 20px;
-    color: rgb(253, 253, 133);
+    color: rgb(20, 20, 20);
 }
 ol{font-size: 20px;
-    color: rgb(167, 167, 66);
+    color: rgb(20, 20, 20);
 }
 ul{font-size: 20px;
-    color: #fdff71;
+    color: rgb(20, 20, 20);
 }
 a{color: crimson;
 }
+
