@@ -1,0 +1,40 @@
+.Uno{
+    background-color:  rgb(116, 108, 44);
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+    border: 2px double transparent;
+}
+
+.Uno > div{
+    background-color:  red;
+    padding: 10px;
+    margin-bottom: 9px;
+    border-radius: 9px;
+}
+
+.Uno > div > div{
+    padding: 10px;
+    margin-top: 8px;
+    background-color: blue;
+    border-radius: 13px;
+    width: 30%;
+    transition: 60s;
+}
+
+div{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 30%, rgba(85,91,234,1) 30%, rgba(239,72,117,1) 70%, rgba(252,70,107,1) 70%);
+}
+
+.Uno:hover{
+    border: 2px double yellow;
+}
+
+.Uno > div > div:hover{
+    width: 90%;
+}
