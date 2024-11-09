@@ -1,0 +1,63 @@
+.liud{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    transition: 4s;
+    height: 500px;
+    width: 500px;
+    border: solid 6px white;
+    margin: 100px;
+    border-radius: 50%;
+}
+
+.liud:hover{
+    border: solid 6px blueviolet;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+
+}
+
+.b{
+    border: 3px solid rgb(71, 71, 255);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    background-color: rgb(0, 0, 255);
+}
+
+.c{
+    border: 3px solid rgb(255, 3, 3);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    background-color: red;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url(OIP.jpg);
+    background-position: center;
+    height: 100dvh;
+    background-size: cover;
+}
+
+.liud:hover .c{
+    background-color: blueviolet;
+    border: solid blueviolet 2px;
+}
+
+.liud:hover .b{
+    background-color: blueviolet;
+    border: solid blueviolet 2px;
+}
