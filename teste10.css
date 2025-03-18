@@ -19,26 +19,25 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: blueviolet;
-
+    background: radial-gradient(circle, #6441A5 0%, #2a0845 35%, #6441A5 70%, #2a0845 100%);
 }
 
 .b{
-    border: 3px solid rgb(71, 71, 255);
     border-radius: 50%;
     height: 100px;
     width: 100px;
     display: flex;
-    background-color: rgb(0, 0, 255);
+    background: rgb(12,37,143);
+    background: radial-gradient(circle, rgba(12,37,143,1) 10%, rgba(50,108,182,1) 49%, rgba(105,175,238,1) 100%);
 }
 
 .c{
-    border: 3px solid rgb(255, 3, 3);
     border-radius: 50%;
     height: 100px;
     width: 100px;
     display: flex;
-    background-color: red;
+    background: rgb(143,12,12);
+    background: radial-gradient(circle, rgba(143,12,12,1) 10%, rgba(182,67,50,1) 49%, rgba(238,145,105,1) 100%);
 }
 
 body{
@@ -52,11 +51,9 @@ body{
 }
 
 .liud:hover .c{
-    background-color: blueviolet;
-    border: solid blueviolet 2px;
+    background-image: none;
 }
 
 .liud:hover .b{
-    background-color: blueviolet;
-    border: solid blueviolet 2px;
+    background-image: none;
 }
