@@ -35,6 +35,7 @@ body {
     background-color: dodgerblue;
     color: white;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .footer {
@@ -48,4 +49,8 @@ body {
 a {
     text-decoration: none;
     color: blue;
+}
+
+a:hover{ 
+    text-decoration: underline;
 }
