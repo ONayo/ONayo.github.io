@@ -51,3 +51,36 @@ button > a{
     text-decoration: none;
     color: white;
 }
+
+.acceptbox{
+    margin-top: 120px;
+    width: 500px;
+    height: 500px;
+    background-color: darkgrey;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 50px;
+}
+
+.photo{
+    background-image: url(AcceptImage.png);
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+}
+
+.a1{
+    font-size: 35px;
+
+}
+
+.a2{
+    font-size: 20px;
+}
+
+.a2 > a{
+    color: rgb(39, 92, 141);
+}
