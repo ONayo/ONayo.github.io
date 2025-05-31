@@ -157,3 +157,33 @@ a{
 .img{
 
 }
+
+.footer a{
+    color: white;
+}
+
+.card{
+    border: 1px red solid;
+    width: 200px;
+    height: 170px;
+    margin-right: 70px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.cards{
+    display: flex;
+    margin-left: 35px;
+    flex-wrap: wrap;
+}
+
+.titleC{
+    border: 1px solid blue;
+    width: 70px;
+}
+
+.imgC{
+    border: 1px solid green;
+    width: 130px;
+}
