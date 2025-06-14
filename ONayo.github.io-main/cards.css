@@ -1,0 +1,68 @@
+body{
+    background-color: #212121;
+    font-family: "Roboto";
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #252525;
+    padding: 10px;
+    border-radius: 10%;
+}
+.image{
+    background-image: url(imagem1.webp);
+    height: 150px;
+    width: 230px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+
+}
+.time{
+    background-color: #212121c4;
+    margin: 10.000000000000001px;
+    border-radius: 5px;
+    padding: 3.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001px;
+}
+.cards{
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.card:hover{
+    background-color: #323232;
+    transition-duration: 0.3s;
+}
+.title{
+    font-size: 17px;
+    width: 230px;
+    margin: 5px;
+}
+.item{
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.637);
+    font-size: 12px;
+    border-radius: 5px;
+}
+.itens{
+    margin: 10px;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    display: none;
+}
+.card:hover .itens{
+    display: flex;
+}
+.card:hover .time{
+    display: none;
+}
+.card:hover .image{
+    justify-content: flex-start;
+}

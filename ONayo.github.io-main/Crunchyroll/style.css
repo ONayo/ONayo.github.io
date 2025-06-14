@@ -1,0 +1,56 @@
+.nav1{
+    background-color: rgba(0, 255, 255, 0);
+}
+.nav2{
+    background-color: rgba(0, 0, 255, 0);
+}
+.nav{
+    background-color: rgb(35, 37, 43);
+    height: 54px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+body{
+    margin: 0;
+    background-color: black;
+}
+.nav1 a img{
+    height: 76px;
+}
+.nav a{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: gainsboro;
+    text-decoration: none;
+    font-family: Arial;
+    gap: 10px;
+}
+.nav div{
+    display: flex;
+}
+.nav a:hover{
+    background-color: #1d1f24;
+}
+.p1{
+    color: orange;
+}
+.p2{
+
+}
+.premium div{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+nav div a img{
+    height: 30px;
+}
+.premium i{
+    color: yellow;
+    font-size: 30px;
+}
+.premium{
+    display: flex;
+}

@@ -1,0 +1,21 @@
+.photo{
+height: 101px;
+width: 303px;
+border: 2px solid black;    
+}
+.photo2{
+    height: 101px;
+    width: 303px;
+    border: 2px solid black;
+    background-image: url('geekssuper.png');
+    background-size: 100%;
+    background-position: center;
+}
+
+body{
+    background-image: url(geekssuper.png);
+    background-size: cover;
+    height: 100dvh;
+    margin: 0;
+    background-position: center;
+}
