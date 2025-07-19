@@ -274,3 +274,31 @@ h2{
     padding: 10px;
     border-radius: 40px;
 }
+
+@media (max-width: 720px){
+
+   .card{
+    scale: 0.8;
+   } 
+
+   .imgsI{
+    scale: 0.7;
+   }
+
+   #index h2{
+    width: 400px;
+   }
+   
+    #mainI{
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #bodyS h2{
+        width: 400px;
+    }
+
+
+}
