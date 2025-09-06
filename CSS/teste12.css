@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(15, 15, 15);
+}
+
+.filho{
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.pai{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 20px;
+}
+
+.filho:hover{
+    scale: 1.2;
+    border: white solid 2px;
+}

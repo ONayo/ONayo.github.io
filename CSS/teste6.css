@@ -1,0 +1,25 @@
+.drcongo{
+    height: 499px;
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.congo{
+    color: whitesmoke;
+    font-size: 41px;
+    border: 3px dotted red ;
+    background-color: aqua;
+    height: 72px;
+    width: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.congo:hover{
+    scale: 1.4000001
+}

@@ -1,0 +1,56 @@
+body {
+    background-color: rgba(30, 143, 255, 0.774);
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(32, 32, 32);
+}
+
+.whitebox {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 30px;
+    gap: 15px;
+    margin: 200px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.whitebox > h2 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.mod {
+    padding: 8px;
+    border: 1px solid lightgray;
+    width: 300px;
+}
+
+.whitebox button {
+    padding: 15px;
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover{ 
+    text-decoration: underline;
+}

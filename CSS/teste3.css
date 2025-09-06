@@ -1,0 +1,17 @@
+p{
+    color: rgb(139, 201, 133); font-size: 20px;
+    text-decoration: underline; font-weight: bold; font-style: italic;
+    background-color: rgba(160, 93, 45, 0.616); 
+    height: 100px; width: 320px;
+}
+h1{
+    color: rgb(255, 219, 12); font-size: 35px;  
+}
+body{
+    background-color: rgb(41, 48, 41); font-family: 'Comic Sans MS';
+    margin: 0;
+}
+div{
+    background: linear-gradient(0deg, rgba(34,193,195,1) 50%, rgba(253,187,45,1) 50%);
+    border: brown solid 5px;
+}
