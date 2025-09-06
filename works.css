@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(58, 58, 58);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+.skibidi{
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    border-radius: 100%;
+    border: 20px outset rgb(109, 28, 28);
+}
+p{
+    font-size: 25px;
+}
+.cameraman{
+    display: flex;
+    justify-content: center;
+}
+.blue{
+    color: rgb(97, 97, 250);
+}
+.red{
+    color: crimson;
+}
+.green{
+    color: forestgreen;
+}

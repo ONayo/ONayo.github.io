@@ -1,0 +1,159 @@
+body{
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.startbox{
+    margin-top: 60px;
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+    height: 500px;
+    display: flex;
+    border-radius: 5%;
+}
+
+.loginbox{
+    background-color: darkcyan;
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/*Com o ">" é filho direto e sem é para qual quer um*/
+.loginbox > h1{
+    margin-top: 50px;
+}
+
+.write{
+    padding: 5px;
+    font-size: 12px;
+}
+
+button{
+    margin-bottom: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(14, 14, 14);
+    color: white;
+    border-radius: 50px;
+}
+
+.loginbox > div{
+    margin: 10px;
+}
+
+button > a{
+    text-decoration: none;
+    color: white;
+}
+
+.acceptbox{
+    margin-top: 120px;
+    width: 500px;
+    height: 500px;
+    background-color: darkgrey;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 50px;
+}
+
+.photo{
+    background-image: url(AcceptImage.png);
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+}
+
+.a1{
+    font-size: 35px;
+
+}
+
+.a2{
+    font-size: 20px;
+}
+
+.a2 > a{
+    color: rgb(39, 92, 141);
+}
+
+/* a partir daqui tudo foi feito depois do dia 29/5/2025 8*/
+
+header{
+    width: 100%;
+    background-color: gray;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#index{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+header > h1{
+    background-color: rgb(75, 75, 75);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    border: 1px solid red;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+}
+
+main > h1{
+    color: white;
+    background-color: gray;
+    width: 285px;
+    height: 80px;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#index a{
+    color: black;
+}
+
+#img1{
+    background-image: url(Deco1.jpg);
+}
+
+#img2{
+    background-image: url(Deco2.jpg);
+}
+
+#img3{
+    background-image: url(Deco03.jpg);
+}
+
+.img{
+
+}
