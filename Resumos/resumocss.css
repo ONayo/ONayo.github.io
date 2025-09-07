@@ -1,0 +1,55 @@
+body{background-color: rgb(32, 32, 32);    
+    font-family: 'Arial';
+    color: white;
+}
+h1{font-size: 38px;
+    color: rgb(240, 240, 240);
+}
+p{font-size: 20px;
+    color: rgb(240, 240, 240);
+}
+h2{font-size: 33px;
+    color: rgb(240, 240, 240);
+}
+h3{font-size: 29px;
+    color: rgb(240, 240, 240);
+}
+h4{font-size: 23px;
+    color: rgb(240, 240, 240);
+}
+td{font-size: 20px;
+    color: rgb(240, 240, 240);
+}
+th{font-size: 20px;
+    color: rgb(240, 240, 240);
+}
+li{font-size: 20px;
+    color: rgb(240, 240, 240);
+}
+ol{font-size: 20px;
+    color: rgb(240, 240, 240);
+}
+ul{font-size: 20px;
+    color: rgb(240, 240, 240);
+}
+a{color: crimson;
+}
+b{
+    color: red;
+}
+.exemplo1{
+    background-image: url(Copy\ of\ Copy\ of\ Copy\ of\ Copy\ of\ Copy\ of\ Copy\ of\ Copy\ of\ Copy\ of\ Untitled\ Design.png);
+    height: 300px;
+    width: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.ex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exemplo1:hover{
+    scale: 1.5;
+    transition: 1.5s;
+}

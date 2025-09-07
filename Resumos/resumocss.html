@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nayo Sites/Estudo Do CSS </title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/0/85.png">
+    <link rel="stylesheet" href="resumocss.css">
+    <style>
+    div{height: 30px;
+    width: 30px; 
+    background-color: rgb(0, 0, 0);
+    border: 3px solid yellow;
+    border-radius: 10px 5px 10px 5px;
+    }
+    </style>
+</head>
+<body>
+    
+    <h1>Material De Estudo CSS</h1>
+    <hr>
+    <h2>Início</h2>
+    <p>A primeira coisa necessária é criar um outro arquivo porém com <b>".css"</b> ou invéz de <b>".html"</b>. <br>
+    Para todas as suas alterações no arquivo <b>"css"</b> funcionar, coloque <b>"link"</b> na cabeça do 
+    html e não troqu o que esta escrito no <b>"rel"</b> porém no <b>"href"</b> você deve colocar o nome do arquivo 
+    css. <br>
+    Para você editar a escrita, você deve digitar o que você quer editar, depois colocar 
+    as flechas, e por fim colocar o que você quer fazer, por exemplo: <b>"p{font-family: ;}"</b>,
+    depois dos <b>":"</b> coloque a fonte que você quer.</p>
+
+    <h3>Tags Principais</h3>
+
+    <h4>Tags Com "font"</h4>
+    <p>A primeira delas é <b>"font-family"</b> que serve para trocar a fonte da sua escrita. <br>
+    A segunda é <b>"font-size"</b> que serve para trocar o tamanho da letra porém é preciso 
+    colocar <b>"px"</b> depois do número. <br></p>
+    
+    <h4>Tags De Cor</h4>
+    <p>A primeira tag de cor é <b>"color"</b> que serve para trocar a cor das palavras, por exemplo: <b>"color: red"</b>, 
+    passando o mouse por cima do quadrado colorido, você poderá trocar a cor para uma que você queira. <br>
+    A segunda tag de cor é <b>"background-color"</b> por ser usado tanto no <b>"body"</b> para definir a cor dele e também 
+    nas tags de escrita com <b>"p"</b>, <b>"h1"</b>, <b>"h2"</b>, etc, ela serve para trocar o fundo do corpo ou da escrita. 
+    </p>
+
+    <h4>Tags De Div</h4>
+    <p>As primeiras são <b>"height"</b> e <b>"width"</b>, a primeira delas serve para trocar a altura do background-color, 
+    a segunda serve para trocar a largura.<br> 
+    A terceira é <b>"border"</b> e <b>"border-radius"</b>, o <b>"border"</b> serve para criar um borda porém o <b>"border-radius"</b> 
+    serve para deixar a borda redonda, tendo os tipos de borda como <b>solid, dashed, dotted, double, inset e outset</b>. <br>
+    Nós também temos os <b>"border-right"</b> e o <b>"border-left"</b> para mudar as bodas apenas nos lados para fazer em cima
+    ou em baixo coloque <b>"top"</b> para cima e <b>"bottom"</b> para baixo. <br>
+    <br>
+    Colocando quatro ou menos números em px no <b>"border-radius"</b> você pode mudar a borda de cada ponta do quadrado. <br>
+    Você também pode colocar porcentagem no <b>width</b> como um tamanho do quadrado que vai se moldar de acordo com a página. <br>
+    (para usar tudo isso você deve usar <b>"div"</b> e mudar as partes dele e para os números deve usar <b>"px"</b>) <br>
+    <br>
+    Usando <b>"margin"</b> ou <b>"padding"</b> você pode mudar a distancia do <b>"div"</b> com ele mesmo ou com o body, sendo o <b>"margin"</b> 
+    o espaçamento externo e o <b>"padding"</b> o espaçamento interno. <br>
+    Também existe um alinhamento de texto que é o <b>"text-align"</b> dai é só escolher se vai ser no centro, esquerda, direita, etc, porém
+    essa é uma maneira simples de fazer isso. <br>
+
+    <p>Colocando <b>"class"</b> dentro de uma imagem, você pode fazer vários tipos de imagens classificando elas. <br>
+    Colocando <b>"id"</b> você pode colocar a mesma classe em um personagem mas também usar o id diferente para fazer alterações pequenas. <br>
+
+    (Para usar o id escreva: <b>"#algumacoisa"</b> e na classe escreva: <b>".algumacoisa"</b>)</p> <br>
+    <p>Colocando <b>":hover"</b> em algum item no css, você pode fazer com que quanto você coloque o mouse por cima do item ele muda 
+    de acordo com o que você programou (precisa der 2 itens o <b>"normal:hover"</b> e o <b>"normal"</b>). <br>
+
+    Colocando <b>"transition"</b> no normal, você pode escolher o tempo de transição entre a imagem <b>"Normal"</b> e a <b>"hover"</b>. <br>
+    Também existe o <b>"opacity"</b> que serve para mudar a opacidade da imagem.
+    </p> <br>
+    <p>Colocando: <b>".algo > div{}"</b>, você pode editar div dentro de outras div, porém colocando <b>".algo > div > div{}"</b>, você pode editar div dentro de 
+    div
+    </p> <br>
+    <p>Existe a tag <b>"box-shadow"</b> ele serve para colocar uma sombra nas caixas.</p> <br>
+
+    <h4>Tags de Flex</h4>
+
+    <p>Colocando <b>"display: flex"</b> dentro de uma classe você pode usar <b>"flex-direction: ???"</b> você pode usar para mudar o lugar onde os 
+    itens dentro dele estão usando <b>"row"</b> e <b>"column"</b>. <br>
+    <br>
+    Ao colocar <b>"justify-content"</b> dentro de uma classe, você poderá colocar os itens no centro, na esquerda, na direita  entre outros (escreva em inglês e isso serve para colocar no 
+     centro, direita e esquerda  em forma horizontal caso usar <b>"row"</b> em <b>"flex-direction"</b>). <br>
+    <br>
+    Ao colocar <b>"gap"</b> dentro de uma classe, você vai poder mudar o espaçamento entre os elementos dentro de uma div. <br>
+    <br>
+    Ao usar <b>"align-text"</b> dentro da classe você pode mudar a direção dos itens em forma vertical caso você usar <b>"row"</b> em <b>"flex-direction"</b>. <br>
+    <br>
+    Você pode usar essas coisas dentro dos itens que estão dentro do principal por exemplo: <b>".algo > div"</b> porém isso muda a direção das coisas dentro da div. <br>
+    <br>
+    Para resolver o problema de quando passar o cursor por cima de algo que você programou para aumentar de tamanho e ele empurar os outros itens você deve usar: <b>"scale"</b> no lugar do <b>"width"</b> e 
+    <b>"height"</b>. (use dentro do hover). <br> </p>
+    <br>
+    <p>Você pode entrar no site <a href="https://www.alura.com.br/artigos/css-guia-do-flexbox?srsltid=AfmBOorYI2pcuBoXlOhbwgmtNrlVPRZP9ItrJ6aF7XoF6M3bVmU6gox9">Alura Flex</a> para aprender mais sobre essas coisas de direções.
+    </p>
+    <p>Existe também o <b>@media ()</b>, ele é usado no css para mudar os itens da página quando a sua tela for menor, dentro do parenteses, bote <b>max-width: ???px</b>, escolhendo um número, 
+    você pode alterar com quantos <b>px</b> a tela precisa ter para aquelas alterações serem feitas.
+    O <b>@media ()</b> funciona como uma segunda aba de CSS mas para ser usado com um tamanho de tela diferente.</p>
+    <p>Temos o <b>position: absolute;</b> que serve para fazer o seu item ser absoluto comparado ao outro e temos o <b>position: fixed;</b> que faz um item ficar preso na tela.
+    Caso queira saber melhor, pesquise no w3bschool.
+    <hr>
+    <h2>Notas</h2>
+    <p>Este site foi feito apenas por <a href="https://x.com/Nayo80141082059">Nayo</a>, foi usado o Visual Studio Code para produzir o site e o 
+    GitHub para postar o site. <br>
+    Use o site "https://cssgradient.io/" para criar um background legal.</p>
+    <p>Use o site "https://getcssscan.com/css-box-shadow-examples" para mudar box-shadow das caixas</p>
+    Você pode apertar botão direito do mouse e ir em inspecionar para saber como são os códigos de verdade.
+</body>
+</html>
+
+
