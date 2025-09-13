@@ -32,5 +32,10 @@
       +"<br>Multiplicação "+mult
       +"<br>Divisão "+divi
    )
-
-   
+   /* operadores de comparação: é para perguntar se duas coisas tem a mesma definição, usar "==" para isso.
+   "a == m" irá dizer que é falso, mesma coisa com "a > m" que eu estou dizendo que "a" é maior que "m", o computador irá dizer false ou true caso o "a" for maior.
+   igualdade: ==
+   maior que: >
+   maior ou igual: >=
+   diferente: != 
+   */
