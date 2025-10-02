@@ -87,7 +87,7 @@
     <hr>
     <h3>Explicações</h3>
 
-    <p>Tudo em <azul>azul</azul> é exemplo, e tudo em <b>vermelho</b> é "tags".</p>
+    <p> Tudo em <label class="azul">azul</label> é exemplo, e tudo em <b>vermelho</b> é "tags".</p>
 
     <hr>
 
@@ -98,6 +98,30 @@
     <p>digite button on click= "" no seu html, e digite "algumacoisa()", também escreva alguma coisa no botão, pode ser apenas "botão" mesmo ou "enviar".  <br>
     Com isso anteriormente, digite no seu java script: function algumacoisa(){} <br>
     Dentro das chaves, você vai poder escolher funções para botões, inputs, etc. </p>
+
+    <h4>document.getElementById('?').innerHTML = ?</h4>
+
+    <p>Essa última coisa serve para usar em conjunto ao item anterior (esse de agora é usado
+        no Java Script). <br>
+        Para usar, escreva o id de tag "p" porém deixe vázio, e lá no Java Script, tudo que estiver
+        depois do igual (use 'alguma coisa': + váriavelAnterior) vai aparecer dentro da tag "p"
+        com este id. <br>
+        Escreva no Java "váriavel = document.getElementById('algo').value", botar o id "algo" em 
+        um input e assim escrever: </p>
+
+        <div class="azul">
+
+            idade = document.getElementById('algo1').value
+            cidade = document.getElementById('algo2').value
+
+            document.getElementById('texto1').innerHTML = 'informações seguintes são as do joão': 
+            +idade+cidade
+        </div>
+        <br>
+        <br>
+        <p>Botando o id "cidade" e "idade" em um input, tudo que escrever naquele input 
+            irá aparecer no lugar do idade e cidade.
+        </p>
 
 </body>
 </html>
