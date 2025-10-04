@@ -25,12 +25,8 @@ function texto(){
 }
 // inner = insira
 function somar(){
-
     n1 = Number(document.getElementById('n1').value)
     n2 = Number(document.getElementById('n2').value)
-
-    soma = n1+n2
-    
-    document.getElementById('respostasoma').innerHTML = soma
-
+    soma = (n1/n2)*100
+    document.getElementById('resultado').innerHTML = '<b>'+soma+'% </b>'
 }

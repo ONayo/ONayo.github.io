@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.tudo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.ipuntb{
+    margin-bottom: 40px;
+}
+
+#resultado1{
+    background-color: green;
+    width: 80px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px darkgreen solid;
+    border-radius: 30px;
+}
