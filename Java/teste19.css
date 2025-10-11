@@ -1,28 +1,12 @@
-body{
-    background-color: rgb(48, 48, 48);
+#saida p{
     color: white;
-    display: flex;
-    justify-content: center;
+    padding: 10px;
 }
 
-.tudo{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 100px;
+.acerto{
+    background-color: rgb(0, 202, 0);
 }
 
-.ipuntb{
-    margin-bottom: 40px;
-}
-
-#resultado1{
-    background-color: green;
-    width: 80px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 3px darkgreen solid;
-    border-radius: 30px;
+.erro{
+    background-color: red;
 }

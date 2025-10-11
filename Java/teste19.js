@@ -1,14 +1,11 @@
-function mostrar(){
+function senhab(){
 
-    item = Number(document.getElementById('itemostrar').value)
+    senha = document.getElementById('senha1').value
 
-    if( item > 3 ){
-        alert('Correto')
-    }else if( item < 3 ){
-        alert('Errado')
+    if( senha == 'super123' ){
+        document.getElementById('saida').innerHTML = '<p class="acerto"> Acesso Concedido </p>'
     }else{
-        alert('Tu dá muito é teu ...')
+        document.getElementById('saida').innerHTML = '<p class="erro"> Acesso Negado </p>'
     }
-
 
 }
