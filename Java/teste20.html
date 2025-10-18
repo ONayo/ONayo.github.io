@@ -9,25 +9,44 @@
 </head>
 <body>
     
-    <h1>Caixa:</h1>
+    <div class="caixinha">
 
-    <div id="caixa">Caixa</div>
+      <h1>Caixa:</h1>
 
-    <hr>
+      <div id="caixa">Caixa</div>
 
-    <h1>Painel de edição:</h1>
+    </div>
 
-    <input type="number" id="largura" placeholder="Defina a largura da caixa"> <br>
+    <div class="edicao"> <!--É para deixar a caixa do lado direito-->
+
+  <h1>Painel de edição:</h1>
+
+    Texto: <input type="text" id="texto" minlength="3" maxlength="15"> <br>
     <br>
-  <!--  <input type="number" id="tamanho" placeholder="Defina o tamanho da caixa"> <br>
-    <br> -->
-    <button onclick="mudarCoisas()">Enviar</button>
-
-    <hr>
-
-    <input type="color" id="cor"> <br>
+    Largura:  <input type="range" id="largura" min="25" max="1001"> <br>
     <br>
-    <button onclick="mudarCor()">Enviar</button>
+    Cor:  <input type="color" id="cor" value="#ffffff"> <br>
+    <br>
+    Altura: <input type="range" id="altura" min="25" max="1001"> <br>
+    <br>
+    Border Radius: <input type="range" id="borderadius" value="0"> <br>
+    <br>
+    Contorno: 
+    <input type="color" id="cor2" value="#000000">
+    <select id="tipo">
+      <option value="solid"> Normal </option>
+      <option value="dashed"> Tracejada </option>
+      <option value="dotted"> Pontilhada </option>
+      <option value="double"> Dupla </option>
+      <option value="inset"> Sombra (Para dentro) </option>
+      <option value="outset"> Sombra (Para fora) </option>
+    </select>
+    <input type="number" id="grosso" min="1" max="25" value="1"> <br>
+    <br>
+    <br>
+      <button onclick="mudarCaixa()">Editar</button>
+
+    </div>
 
 
 </body>
