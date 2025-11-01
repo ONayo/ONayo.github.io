@@ -16,13 +16,13 @@ function pontos(){
 
     document.getElementById('relatorio').innerHTML = "Sua pontuação foi definida como: <b>"+ pts +"</b>"
 
-    if(pts > 200){
+    if(pts > 1000){
         document.getElementById('classtua').innerHTML = '<b>Sua classificação foi determinada como: ' + '神 (Deus)</b>'
-    }else if(pts > 150){
+    }else if(pts > 1000){
         document.getElementById('classtua').innerHTML = '<b>Sua classificação foi determinada como: ' + 'Tier 1</b>. Força continental.'
-    }else if(pts > 135){
+    }else if(pts > 500){
         document.getElementById('classtua').innerHTML = '<b>Sua classificação foi determinada como: ' + 'Tier 2</b>. Força nacional.'
-    }else if(pts > 105){
+    }else if(pts > 250){
         document.getElementById('classtua').innerHTML = '<b>Sua classificação foi determinada como: ' + 'Tier 3</b>. Força regional.'
     }else if(pts > 90){
         document.getElementById('classtua').innerHTML = '<b>Sua classificação foi determinada como: ' + 'SSS</b>. Parabéns! Você é quase o topo do topo!'
