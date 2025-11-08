@@ -15,7 +15,7 @@ function contar(){
         document.getElementById('retorno').innerHTML += contagem+'<br>'
     }
 
-   /* ambos são a mesma coisa, tire comentário de um e bote no outro para testar.
+    ambos os códigos em verde são a mesma coisa, tire comentário de um e bote no outro para testar.
 
     document.getElementById('retorno').innerHTML += '1<br>'
     document.getElementById('retorno').innerHTML += '2<br>'
