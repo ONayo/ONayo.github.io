@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 24</title>
+    <script src="teste24.js"></script>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/0/85.png">
+</head>
+<body>
+    
+    <h1>Listas</h1>
+
+    <p>Ao invés de salvar nomes (exemplo) por várias váriaveis como: <br>
+        nome1 = Pedro <br>
+        nome2 = Rodrigo <br>
+    <br>
+      Faça: <br>
+        nomes = ['Pedro', 'Rodrigo'] <br>
+        <hr>
+
+        Vamos pensar que você quer consultar a posição de algum nome na lista, para fazer isso, escreva no console: <br>
+        <br>
+        "nomes[número escolhido]", ao invés de aparecer a letra nessa posição, aparecerá o nome nessa posição. <br>
+        <br>
+        Pode escrever no console: "nomes[0][1]" para mostrar o primeiro caracter da segunda palavra. <br>
+        <br>
+        Mesma coisa acontecerá com lista.length, vai falar quantos NOMES tem na lista. <br>
+        <br>
+        É também possível subescrever algum elemento: nomes[0] - 'Murilo' / fazendo o Pedro ser subistituido por Murilo. <br>
+        <br>
+        O "lista.push('algum nome')" e "lista.unshift('outro nome')" adicionam novos nomes à lista, porém o push adiciona no final,
+        e o unshift no início. <br>
+        <br>
+        O "lista.pop()" irá retirar algum do final e o "lista.shift()" será do começo. <br>
+        <br>
+        Para retirar algum no meio da lista, escreva: "lista.splice(número, número2)", o primeiro número decide a partir de qual item você quer tirar,
+        o número2 é quantos você quer tirar. <br>
+        <br>
+        Também sendo possível escrever (por exemplo): "lista.splice(???, 0, algum nome)" retirando nenhum nome e adicionando um novo. <br>
+        <br>
+        Tem como ver uma área dentro da lista, sendo "lista.slice(1,3)" visualizando o segundo e terceiro item da lista. <br>
+        <br>
+        Para ver se algum item está na lista, escreva no console: "lista.includes('algum nome')", o console vai retornar para você com true ou false
+        para caso o item exista na lista ou não. <br>
+        <br>
+        Tem também o lista.indexOf('algum nome'), para saber a posição de algo (se der -1 é por que não tem na lista). <br>
+        <br>
+        O lista.sort() vai reescrever tudo porém em ordem alfabética ou ordem crescente caso uma lista de número, e o lista.reverse() vai reverter a ordem atual. <br>
+        <br>
+        Caso você queira que apareça todos os itens da lista na sua página, escreva: document.writeln(lista.join('')) sendo o que está dentro da '' é o que vai aparecer entre os itens. <br>
+        <br>
+        É possível também escrever as coisas: "document.writeln('< b >'+lista.join('')+'< / b >')" (para escrever tudo em negrito) ou 
+        "document.writeln('< div >'+lista.join('')+'< / div >')" para escrever tudo dentro de uma div (espaçamento entre "b" e "< >" para não virar uma tag dentro do html enquanto estou explicando)
+    </p>
+
+</body>
+</html>
