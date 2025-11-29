@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 20</title>
+    <link rel="stylesheet" href="teste20.css">
+    <script src="teste20.js"></script>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/0/85.png">
+</head>
+<body>
+    
+    <div class="caixinha">
+
+      <h1>Caixa:</h1>
+
+      <div id="caixa">Caixa</div>
+
+    </div>
+
+    <div class="edicao"> <!--É para deixar a caixa do lado direito-->
+
+  <h1>Painel de edição:</h1>
+
+    Texto: <input type="text" id="texto" minlength="3" maxlength="15"> <br>
+    <br>
+    Largura:  <input type="range" id="largura" min="25" max="1001"> <br>
+    <br>
+    Cor:  <input type="color" id="cor" value="#ffffff"> <br>
+    <br>
+    Altura: <input type="range" id="altura" min="25" max="1001"> <br>
+    <br>
+    Border Radius: <input type="range" id="borderadius" value="0"> <br>
+    <br>
+    Contorno: 
+    <input type="color" id="cor2" value="#000000">
+    <select id="tipo">
+      <option value="solid"> Normal </option>
+      <option value="dashed"> Tracejada </option>
+      <option value="dotted"> Pontilhada </option>
+      <option value="double"> Dupla </option>
+      <option value="inset"> Sombra (Para dentro) </option>
+      <option value="outset"> Sombra (Para fora) </option>
+    </select>
+    <input type="number" id="grosso" min="1" max="25" value="1"> <br>
+    <br>
+    <br>
+      <button onclick="mudarCaixa()">Editar</button>
+
+    </div>
+
+
+</body>
+</html>
