@@ -1,4 +1,13 @@
-lista = []
+lista = JSON.parse(localStorage.getItem('lista')) || []
+window.onload = carregarLista
+
+function carregarLista(){
+    // SAÍDA
+    if(lista.length > 0){
+        document.getElementById('lista').innerHTML = '<li>'+lista.join('</li><li>')+'</li>'
+    }
+
+}
 
 function listar(){
     // ENTRADA
@@ -15,11 +24,8 @@ function listar(){
         alert('Não se deve adicionar itens repetidos')
     }else{
         lista.push(item)
-    }
-
-    // SAÍDA
-    if(lista.length > 0){
-        document.getElementById('lista').innerHTML = '<li>'+lista.join('</li><li>')+'</li>'
+        localStorage.setItem('lista',JSON.stringify(lista))
+        carregarLista()
     }
 
 }
