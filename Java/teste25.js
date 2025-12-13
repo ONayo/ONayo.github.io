@@ -2,11 +2,34 @@ lista = JSON.parse(localStorage.getItem('lista')) || []
 window.onload = carregarLista
 
 function carregarLista(){
+
+    localStorage.setItem('lista',JSON.stringify(lista))
+    document.getElementById('lista').innerHTML = ''
     // SAÍDA
     if(lista.length > 0){
-        document.getElementById('lista').innerHTML = '<li>'+lista.join('</li><li>')+'</li>'
+       // document.getElementById('lista').innerHTML = '<li>'+lista.join('</li><li>')+'</li>'
+
+
+
+        for(loop=0; loop<lista.length; loop++){ //usar loop ou i (i é mais recomendado)
+            document.getElementById('lista').innerHTML += '<li>'+lista[loop]+'<button onclick="deleteItem('+loop+')">X</button></li>'
+        }
+
     }
 
+}
+
+function deleteItem(x){
+   // alert('Você tentou deletar o item '+lista[x]) // +lista[x] ou +(x+1)
+   if( confirm('Tem certeza que tu deseja deletar o item '+lista[x]+'?') ){
+    lista.splice(x,1)
+    carregarLista()
+   }
+}
+
+function esvaziar(){
+    lista = []
+    carregarLista()
 }
 
 function listar(){
@@ -24,7 +47,6 @@ function listar(){
         alert('Não se deve adicionar itens repetidos')
     }else{
         lista.push(item)
-        localStorage.setItem('lista',JSON.stringify(lista))
         carregarLista()
     }
 
