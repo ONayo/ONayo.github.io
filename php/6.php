@@ -15,6 +15,8 @@
     foreach($lista as $pessoa){
         if(strpos($pessoa,'e')){
             echo('<li>'.$pessoa.'</li>');
+        }else{
+            echo('<li> <del>'.$pessoa.'</del> </li>');
         }
     }
     echo('</ul>');
