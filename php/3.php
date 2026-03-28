@@ -11,7 +11,7 @@
     <h1>Par ou ímpar</h1>
 
     <form action="" method="post">
-        <select name="escolha" id="">
+        <select name="escolha">
             <option value="par">Par</option>
             <option value="impar">Ímpar</option>
         </select>

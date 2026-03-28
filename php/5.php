@@ -9,7 +9,7 @@
     
     <?php
     
-    $texto = ' A grama é azul';
+    $texto = ' A grama era azul';
     $texto = ltrim($texto); // tinha espaço esquerdo
     $texto = rtrim($texto); // tira espaço direito
     $texto = trim($texto); // tira espaços
