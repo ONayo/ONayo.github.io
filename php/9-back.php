@@ -18,9 +18,9 @@
         $cargo = @$_POST['cargo'];
 
         $sql = "INSERT INTO workers (nome, idade, cargo) VALUES ('$nome', '$idade', '$cargo')";
-        $conexao->query($sql);
+        $resultado = $conexao->query($sql);
 
             // REDIRECIONAR PARA OUTRA PÁGINA
-        header('Location: 8-front.php');
+        header('Location: 10-workers.php');
 
         ?>
