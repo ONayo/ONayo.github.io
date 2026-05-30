@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de funcionários</title>
+    <link rel="stylesheet" href="10.css">
 </head>
 <body>
     
-    <a href="8-front.php">Adicionar funcionários</a>
+    <div class="central">
 
     <h1>Lista dos funcionários</h1>
 
@@ -28,7 +29,7 @@
 
     // var_dump($resultado);
 
-    echo('<table border>');
+    echo('<table>');
     echo('<tr>
     <th>ID</th><th>NOME</th><th>IDADE</th><th>CARGO</th>
     </tr>');
@@ -39,14 +40,20 @@
             <td>'.$linha['nome'].'</td>
             <td>'.$linha['idade'].'</td>
             <td>'.$linha['cargo'].'</td>
-            <td><a href="11-deletar.php?info='.$linha['ID'].'" onclick="return confirm(`Tem certeza que deseja remove-lo?`)">Remover</a></td>
-            <td><a href="12-editar.php?info='.$linha['ID'].'" onclick="return confirm(`Tem certeza que deseja edita-lo?`)">Editar</a></td>
-        <tr>');
+            <td class="aaa"><a href="11-deletar.php?info='.$linha['ID'].'" onclick="return confirm(`Tem certeza que deseja remove-lo?`)">Remover</a></td>
+            <td class="aaa"><a href="12-editar.php?info='.$linha['ID'].'" onclick="return confirm(`Tem certeza que deseja edita-lo?`)">Editar</a></td>
+        </tr>');
 
     }
     echo('</table');
 
     ?>
+
+    <div>
+        <a class="aa" href="8-front.php">Adicionar funcionários</a>
+    </div>
+
+    </div>
 
 </body>
 </html>

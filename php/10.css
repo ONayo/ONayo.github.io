@@ -1,0 +1,92 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+    background-color: rgb(29, 29, 29);
+    padding: 25px;
+}
+table{
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+th, td{
+    border: none;
+}
+.central{
+    display: flex;
+    background-color: rgb(56, 23, 83);
+    align-items: center;
+    flex-direction: column;
+    border: 5px rgb(22, 1, 22) solid;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+a{
+    color: rgba(0, 0, 0, 0.596);
+    text-decoration: none;
+}
+h1{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(39, 17, 58);
+    border: rgb(39, 17, 58) 2px outset;
+}
+tr:nth-child(odd){
+    border-radius: 5px;
+    background-color: rgb(69, 49, 92);
+    border: rgb(86, 82, 128) 2px outset;
+}
+tr:nth-child(even){
+    border-radius: 5px;
+    background-color: rgb(50, 35, 66);
+    border: rgb(67, 64, 99) 2px outset;
+}
+tr:first-child{
+    background-color: rgb(69, 49, 92);
+}
+.aa{
+    color: rgba(0, 0, 0, 0.596);
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: rgb(69, 49, 92);
+    border: rgb(86, 82, 128) 2px outset;
+}
+input{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(69, 49, 92);
+    border: rgb(86, 82, 128) 2px outset;
+    border-radius: 5px;
+    outline: rgb(67, 64, 99);
+}
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    color: rgba(0, 0, 0, 0.596);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    background-color: rgb(69, 49, 92);
+    border: rgb(86, 82, 128) 2px outset;
+}
+input::placeholder{
+    color: rgba(0, 0, 0, 0.596);
+    padding-left: 2px;
+}
+td{
+    padding: 3px;
+    border: rgb(86, 82, 128) 2px outset;
+}
+.aaa{
+    border: rgb(86, 82, 128) 2px outset;
+}
+th{
+    border: rgb(86, 82, 128) 2px outset;
+}
