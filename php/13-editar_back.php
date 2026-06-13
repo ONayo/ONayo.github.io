@@ -9,7 +9,7 @@
         $senha = '';
         $banco = 'simyes';
 
-        $conexao = new mysqli($host, $usuario, $senha, $banco); 
+        include_once('14-connect.php');
 
         // PEGAR INFORMAÇÕES
 

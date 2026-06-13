@@ -11,7 +11,7 @@
     <?php 
         $valor = $_GET['info'];
 
-        $conexao = new mysqli('localhost', 'root', '', 'simyes');
+        include_once('14-connect.php');
         $sql = "SELECT * FROM workers WHERE ID = '$valor'";
         $resultado = $conexao->query($sql);
 

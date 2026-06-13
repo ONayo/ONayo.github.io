@@ -21,7 +21,7 @@
 
     <?php 
 
-    $conexao = new mysqli('localhost', 'root', '', 'simyes');
+    include_once('14-connect.php');
     
     $searcher = @$_POST['searcher'];
     $sql = "SELECT * FROM workers WHERE nome LIKE '%$searcher%'";
