@@ -15,7 +15,7 @@
     <form class="form" action="9-back.php" method="post">
         <input type="text" name="nome" max="64" min="3" placeholder="Nome"> <br>
         <input type="number" name="idade" placeholder="Idade"> <br>
-        <select name="cargo" id="">
+        <select name="cargo">
             <option>Estagiário</option>
             <option>Contador</option>
             <option>Engenheiro</option>
@@ -40,14 +40,15 @@
 
     </div>
 
-    <div>
+    <div class="erros">
         <?php
         session_start(); 
         if(isset($_SESSION['erros'])){
-            echo($_SESSION['erros'][0]);
-            echo($_SESSION['erros'][1]);
-
+            foreach($_SESSION['erros'] as $erro){
+                echo('<p class="erro">'.$erro.'</p>');
+            }
         }
+        unset($_SESSION['erros']);
         ?>
     </div>
 

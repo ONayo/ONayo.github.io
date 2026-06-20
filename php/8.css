@@ -1,0 +1,87 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+    background-color: rgb(29, 29, 29);
+}
+.central{
+    display: flex;
+    background-color: rgb(56, 23, 83);
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    border: 5px rgb(22, 1, 22) solid;
+    scale: 1.5;
+}
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(69, 49, 92);
+    border: rgb(86, 82, 128) 2px outset;
+    border-radius: 5px;
+    outline: rgb(67, 64, 99);
+}
+select{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(69, 49, 92);
+    border: rgb(86, 82, 128) 2px outset;
+    border-radius: 5px;
+    outline: rgb(67, 64, 99);
+    width: 175px;
+}
+button{
+    color: rgba(0, 0, 0, 0.596);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    background-color: rgb(69, 49, 92);
+    border: rgb(86, 82, 128) 2px outset;
+}
+input::placeholder{
+    color: rgba(0, 0, 0, 0.596);
+    padding-left: 2px;
+}
+a{
+    color: rgba(0, 0, 0, 0.596);
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: rgb(69, 49, 92);
+    border: rgb(86, 82, 128) 2px outset;
+}
+h1{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(39, 17, 58);
+    border: rgb(39, 17, 58) 2px outset;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.erro{
+    margin: 10px;
+    background-color: rgb(250, 0, 0);
+    width: 200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 10px;
+    border: inset rgb(165, 1, 1) 5px;
+}
+.erros{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
