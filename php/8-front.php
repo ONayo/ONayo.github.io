@@ -8,14 +8,17 @@
 </head>
 <body>
 
+    <?php
+    session_start(); 
+    ?>
     <div class="central">
 
     <h1>Adicionar Funcionário</h1>
 
     <form class="form" action="9-back.php" method="post">
-        <input type="text" name="nome" max="64" min="3" placeholder="Nome"> <br>
-        <input type="number" name="idade" placeholder="Idade"> <br>
-        <select name="cargo">
+        <input type="text" name="nome" max="64" min="3" placeholder="Nome" value="<?= $_SESSION['previous']['nome'] ?? '' ?>"> <br>
+        <input type="number" name="idade" placeholder="Idade" value="<?= $_SESSION['previous']['idade'] ?? '' ?>"> <br>
+        <select name="cargo" value="<?= $_SESSION['previous']['cargo'] ?? '' ?>" >
             <option>Estagiário</option>
             <option>Contador</option>
             <option>Engenheiro</option>
@@ -42,13 +45,13 @@
 
     <div class="erros">
         <?php
-        session_start(); 
         if(isset($_SESSION['erros'])){
             foreach($_SESSION['erros'] as $erro){
                 echo('<p class="erro">'.$erro.'</p>');
             }
         }
         unset($_SESSION['erros']);
+        unset($_SESSION['previous']);
         ?>
     </div>
 

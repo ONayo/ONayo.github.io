@@ -18,6 +18,9 @@
         $idade = @$_POST['idade'];
         $cargo = @$_POST['cargo'];
 
+        // guardar todo o formulário
+        $_SESSION['previous'] = $_POST;
+
         // VALIDAR INFORMAÇÕES
 
         $erros = [];
