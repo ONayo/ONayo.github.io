@@ -5,6 +5,6 @@ $usuario = 'root';
 $senha = '';
 $banco = 'naono';
 
-$conexao = new mysqli($host, $usuario, $senha, $banco)
+$conexao = new mysqli($host, $usuario, $senha, $banco);
 
 ?>

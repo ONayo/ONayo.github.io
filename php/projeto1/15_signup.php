@@ -10,7 +10,7 @@
 <body>
 
     <form action="16_signup_back.php" method="POST">
-        <h2>Criar Conta</h2>
+        <h2>Create An Account</h2>
         <span>name</span> 
         <input type="text" name="nome"> <br>
         <span>email</span>
@@ -19,7 +19,7 @@
         <input type="date" name="nascimento"> <br>
         <span>genre</span>
         <select id="" name="genero">
-            <option>don't say</option>
+            <option>do not say</option>
             <option>masculine</option>
             <option>feminine</option>
             <option>other</option>
