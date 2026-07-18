@@ -50,7 +50,7 @@ if( empty($email) ){
     $erros[] = 'Email não preenchido';
 }
 if( $resultado_email->num_rows > 0){
-    $erros[] = 'Email já utilizado.'
+    $erros[] = 'Email já utilizado.';
 }
 if( empty($nascimento) ){
     $erros[] = 'Data de nascimento não selecionada';
