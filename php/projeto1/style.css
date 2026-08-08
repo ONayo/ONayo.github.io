@@ -32,3 +32,11 @@ form button{
 form input, span, select{
 width: 100%;
 }
+.errorbox{
+    background-color: red; 
+    width: 400px;
+    margin: 20px;
+}
+.errorbox p{
+    margin: 20px;
+}
