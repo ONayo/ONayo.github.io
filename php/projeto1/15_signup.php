@@ -8,7 +8,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/0/85.png">
 </head>
 <body>
 
@@ -21,7 +21,7 @@ session_start();
         <span>birthday</span> 
         <input type="date" name="nascimento" value="<?= $_SESSION['old']['date'] ?? '' ?>"> <br>
         <span>genre</span>
-        <select id="" name="genero" value="<?= $_SESSION['old']['genero'] ?? '' ?>">
+        <select name="genero" value="<?= $_SESSION['old']['genero'] ?? '' ?>">
             <option>do not say</option>
             <option>masculine</option>
             <option>feminine</option>
@@ -33,7 +33,7 @@ session_start();
         <input type="password" name="senha" value="<?= $_SESSION['old']['senha'] ?? '' ?>"> <br>
         <span>confirm password</span>
         <input type="password" name="confsenha" value="<?= $_SESSION['old']['confsenha'] ?? '' ?>">
-        <button type="submit">Join</button>
+        <button type="submit">Sign Up</button>
     </form>
     <p>Already have signed up? Log in <a href="18_login.php">here</a></p>
 

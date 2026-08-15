@@ -36,39 +36,39 @@ $senhacripto = password_hash($senha,PASSWORD_DEFAULT);
 $erros = [];
 
 if( empty($nome) ){
-    $erros[] = 'Nome não dito <br>';
+    $erros[] = 'No name <br>';
 }
 if ( strlen($nome) < 3 ){
-    $erros[] = 'Nome pequeno <br>';
+    $erros[] = 'Small name <br>';
 }
 if( empty($foto) ){
-    $erros[] = 'Foto não enviada <br>';
+    $erros[] = 'No photo <br>';
 }
 if( empty($senha) ){
-    $erros[] = 'Senha não informada <br>';
+    $erros[] = 'No password <br>';
 }
 if ( $senha != $confsenha ){
-    $erros[] = 'Senhas divergentes <br>';
+    $erros[] = 'Different passwords <br>';
 }
 if ( strlen($senha) < 4 ){
-    $erros[] = 'Senha pequena <br>';
+    $erros[] = 'Small password <br>';
 }
 if( empty($email) ){
-    $erros[] = 'Email não preenchido <br>';
+    $erros[] = 'No email <br>';
 }
 if( $resultado_email->num_rows > 0){
-    $erros[] = 'Email já utilizado <br>';
+    $erros[] = 'This email have been used before <br>';
 }
 if( empty($nascimento) ){
-    $erros[] = 'Data de nascimento não selecionada <br>';
+    $erros[] = 'No birth date <br>';
 }
 if( $data > $hoje){
-    $erros[] = 'A idade selecionada está no futuro <br>';
+    $erros[] = 'Imaginary date <br>';
 }else if( $data > $limitenovo){
-    $erros[] = 'A idade selecionada é insuficiente <br>';
+    $erros[] = 'Too young <br>';
 }
 if( $data < $limiteantigo){
-    $erros[] = 'A idade selecionada é muito antiga <br>';
+    $erros[] = 'Too old <br>';
 }
 
 # SALVAR O CADASTRO
