@@ -41,7 +41,7 @@ session_start();
         <?php
             if(isset($_SESSION['erros'])){
                 foreach($_SESSION['erros'] as $erro){
-                    echo('<p>'.$erro.'</php>');
+                    echo('<p>'.$erro.'</p>');
                 }
             }
             unset($_SESSION['erros']);

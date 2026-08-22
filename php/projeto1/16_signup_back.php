@@ -77,7 +77,8 @@ if( empty($erros) ){
     $sql = "INSERT INTO contas (nome, email, nascimento, genero, senha)
         VALUES ('$nome', '$email', '$nascimento', '$genero', '$senhacripto')";
     $conexao->query($sql);
-    header('Location: 15_signup.php');
+    unset($_SESSION['old']);
+    header('Location: 18_login.php');
 }else{
     $_SESSION['erros'] = $erros;
     header('Location: 15_signup.php');
