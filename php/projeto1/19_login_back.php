@@ -14,9 +14,9 @@
 
     if( $resultado->num_rows > 0 ){
         $usuario = $resultado->fetch_assoc();
-        if( password_verify($senha, $usuario['senha']) ){
+        if( password_verify($senha,$usuario['senha']) ){
             unset($_SESSION['old']);
-            $_SESSION['id'] = $usuario['id'];
+            $_SESSION['id'] = $usuario['ID'];
             header('Location: index.php');
         }else{
             $_SESSION['erro'] = 'Senha incorreta.';

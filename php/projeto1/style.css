@@ -3,6 +3,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 form{
     display: flex;
@@ -10,12 +11,19 @@ form{
     margin: 0 50px;
     gap: 3px;
     width: 401px;
-    align-items: center;
 }
-form input, form select{
+form input, form select, form textarea{
     background-color: lightseagreen;
     border: none;
     padding: 5px;
+    width: 401px;
+}
+form textarea{
+    resize: none;
+    height: 100px;
+}
+form select{
+    width: 411px;
 }
 form h2{
     text-align: center;
