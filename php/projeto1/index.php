@@ -18,6 +18,7 @@ $usuario = $retorno->fetch_assoc();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/0/85.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
@@ -28,6 +29,10 @@ $usuario = $retorno->fetch_assoc();
     <hr>
 
     <a href="21_postmaker.php">Posts</a>
+
+    <hr>
+
+    <a href="23_forum.php">Forum</a>
 
 </body>
 </html>

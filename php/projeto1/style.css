@@ -63,3 +63,6 @@ input:focus{
   /* Optional: Add a smooth transition effect */
   transition: border-color 0.2s ease-in-out;
 }
+.post{
+    background-color: rgb(105, 209, 174);
+}

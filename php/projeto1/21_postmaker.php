@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <form action="19_login_back.php" method="POST">
+    <form action="22_postback.php" method="POST">
         <h2>Make a post</h2>
         <span>Post Title</span>
         <input type="text" name="titulo"> <br>
@@ -17,6 +17,16 @@
         <textarea name="texto" id=""></textarea>
         <button type="submit">Post</button>
     </form>
+
+    <div class="errorbox">
+        <?php
+            if(isset($_SESSION['erro'])){
+                echo('<p>'.$_SESSION['erro'].'</php>');
+            }
+            unset($_SESSION['erro']);
+            unset($_SESSION['old']);
+        ?>
+    </div>
 
 </body>
 </html>
