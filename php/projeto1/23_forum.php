@@ -1,3 +1,5 @@
+<?php include_once('25_headerinfo.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +11,11 @@
 </head>
 <body>
 
-    <h1>Forum</h1>
+    <?php include_once('24_header.php'); ?>
 
+
+    <div class="cards">
     <?php
-    
-    session_start();
     include_once('17_connection.php');
 
     $sql = "SELECT * FROM posts ORDER BY ID DESC";
@@ -29,7 +31,7 @@
 ?>
         <div class="post">
             <h2><?=$post['title']?></h2>
-            <p><?=$post['text']?></p>
+            <p class="ppost"><?=$post['text']?></p>
             <small>Autor: <?=$autor['nome']?></small><br>
             <small>Date: <?=$post['date']?></small>
         </div>
@@ -37,6 +39,8 @@
  <?php
     }
     ?>
+    </div>
+
 
 </body>
 </html>

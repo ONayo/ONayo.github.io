@@ -16,7 +16,7 @@ if( empty($titulo) ){
 if ( strlen($titulo) > 50 ){
     $erros[] = 'Title is larger than acceptable <br>';
 }
-if( strlen($texto) > 250 ){
+if( strlen($texto) > 175 ){
     $erros[] = 'Text is larger than acceptable <br>';
 }
 if( empty($texto) ){

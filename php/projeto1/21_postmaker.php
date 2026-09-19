@@ -1,3 +1,5 @@
+<?php include_once('25_headerinfo.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +11,9 @@
 </head>
 <body>
     
+    <?php include_once('24_header.php'); ?>
+
     <form action="22_postback.php" method="POST">
-        <h2>Make a post</h2>
         <span>Post Title</span>
         <input type="text" name="titulo"> <br>
         <span>Content</span>

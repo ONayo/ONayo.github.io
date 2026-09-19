@@ -12,8 +12,9 @@ session_start();
 </head>
 <body>
     
+    <h1>Log In</h1>
+
     <form action="19_login_back.php" method="POST">
-        <h2>Log In</h2>
         <span>Email</span>
         <input type="email" name="email" value="<?= $_SESSION['old']['email'] ?? '' ?>"> <br>
         <span>Password</span>

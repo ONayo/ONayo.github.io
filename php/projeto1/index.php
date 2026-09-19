@@ -1,16 +1,5 @@
-<?php
-session_start();
-include_once('17_connection.php');
+<?php include_once('25_headerinfo.php'); ?>
 
-if( !(isset($_SESSION['id'])) ){
-    header('Location: 18_login.php');
-}
-
-$idusuario = $_SESSION['id'];
-$sql = "SELECT * FROM contas WHERE ID = '$idusuario'";
-$retorno = $conexao->query($sql);
-$usuario = $retorno->fetch_assoc();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +11,9 @@ $usuario = $retorno->fetch_assoc();
 </head>
 <body>
     
-    <h1>Hello <?= $usuario['nome'] ?></h1>
+    <?php include_once('24_header.php'); ?>
+
+    <h1>Hello <?= $usuario['nome'] ?>!</h1>
 
     <a href="20_logout.php">disconnect</a>
 
