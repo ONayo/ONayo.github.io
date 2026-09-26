@@ -1,5 +1,5 @@
 <header>
-    <a class="pfp" href="">pp</a>
+    <a href=""><img class="pfp" src="photo_data/<?= $usuario['foto'] ?>"></a>
     <nav>
         <h2><a href="23_forum.php">Forum</a></h2>    
         <h2><a href="21_postmaker.php">Posts</a></h2>

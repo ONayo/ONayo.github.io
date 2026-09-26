@@ -13,7 +13,6 @@ $nome = $_POST['nome'];
 $email = $_POST['email'];
 $nascimento = $_POST['nascimento'];
 $genero = $_POST['genero'];
-$foto = $_POST['foto'];
 $senha = $_POST['senha'];
 $confsenha = $_POST['confsenha'];
 
@@ -40,9 +39,6 @@ if( empty($nome) ){
 }
 if ( strlen($nome) < 3 ){
     $erros[] = 'Small name <br>';
-}
-if( empty($foto) ){
-    $erros[] = 'No photo <br>';
 }
 if( empty($senha) ){
     $erros[] = 'No password <br>';
@@ -74,8 +70,22 @@ if( $data < $limiteantigo){
 # SALVAR O CADASTRO
 
 if( empty($erros) ){
-    $sql = "INSERT INTO contas (nome, email, nascimento, genero, senha)
-        VALUES ('$nome', '$email', '$nascimento', '$genero', '$senhacripto')";
+    
+    # FOTO
+    $nome_foto = 'default.png'; // valor padrão
+    if (isset($_FILES['foto']) && $_FILES['foto']['error'] === UPLOAD_ERR_OK) {
+        $extensao = pathinfo($_FILES['foto']['name'],  PATHINFO_EXTENSION);
+        $novo_nome = uniqid() . "." . $extensao;
+        $destino = "photo_data/" . $novo_nome;
+
+        if (move_uploaded_file($_FILES['foto']['tmp_name'], $destino)) {
+            $nome_foto = $novo_nome;
+        }
+    }
+
+    # SALVAR NO BANCO
+    $sql = "INSERT INTO contas (nome, email, nascimento, genero, senha, foto)
+        VALUES ('$nome', '$email', '$nascimento', '$genero', '$senhacripto', '$nome_foto')";
     $conexao->query($sql);
     unset($_SESSION['old']);
     header('Location: 18_login.php');

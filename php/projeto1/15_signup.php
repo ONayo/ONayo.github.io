@@ -12,7 +12,7 @@ session_start();
 </head>
 <body>
 
-    <form action="16_signup_back.php" method="POST">
+    <form action="16_signup_back.php" method="POST" enctype="multipart/form-data">
         <h2>Create An Account</h2>
         <span>name</span> 
         <input type="text" name="nome" value="<?= $_SESSION['old']['nome'] ?? '' ?>"> <br>
@@ -28,7 +28,7 @@ session_start();
             <option>other</option>
         </select> <br>
         <span>profile picture</span>
-        <input type="file" name="foto" value="<?= $_SESSION['old']['foto'] ?? '' ?>"> <br>
+        <input type="file" name="foto" value="<?= $_SESSION['old']['foto'] ?? '' ?>" accept="image/*"> <br>
         <span>password</span>
         <input type="password" name="senha" value="<?= $_SESSION['old']['senha'] ?? '' ?>"> <br>
         <span>confirm password</span>

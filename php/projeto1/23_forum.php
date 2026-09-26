@@ -32,7 +32,9 @@
         <div class="post">
             <h2><?=$post['title']?></h2>
             <p class="ppost"><?=$post['text']?></p>
-            <small>Autor: <?=$autor['nome']?></small><br>
+            <small>Autor: <?=$autor['nome']?></small>
+        <!--    <img class="photo" src="photo_data/<?=$autor['foto']?>" alt=""> -->
+            <br>
             <small>Date: <?=$post['date']?></small>
         </div>
 
