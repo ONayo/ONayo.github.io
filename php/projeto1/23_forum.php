@@ -12,7 +12,7 @@
 <body>
 
     <?php include_once('24_header.php'); ?>
-
+    <div class="mar50"></div>
 
     <div class="cards">
     <?php

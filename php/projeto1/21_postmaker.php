@@ -12,6 +12,7 @@
 <body>
     
     <?php include_once('24_header.php'); ?>
+    <div class="mar50"></div>
 
     <form action="22_postback.php" method="POST">
         <span>Post Title</span>

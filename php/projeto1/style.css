@@ -95,10 +95,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
-    height: 130px;
+    height: 15vh;
     width: 100%;
     background-color: lightseagreen;
+}
+.mar50{
+    margin-bottom: 50px;
 }
 header h1{
     margin: 0px 40px;
@@ -119,6 +121,7 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
 }
 .pfp{
     background-color: rgb(26, 145, 139);
@@ -126,4 +129,21 @@ nav{
     width: 75px;
     border-radius: 50%;
     border: 5px solid rgb(26, 145, 139);
+}
+.profileDiv{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+}
+.baseInfo{
+    background-color:rgb(23, 128, 122) ;
+    height: 85vh;
+    width: 60vh;
+    margin: 0px;
+}
+.changeInfo{
+    height: 85vh;
+    width: 70.5vw;
+    background-color: lightblue;
+    margin: 0px;
 }

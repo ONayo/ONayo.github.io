@@ -11,19 +11,20 @@
 </head>
 <body>
     
-    <?php include_once('24_header.php'); ?>
+    <?php include_once('24_2_header.php'); ?>
+    <div class="mar50"></div>
 
-    <h1>Hello <?= $usuario['nome'] ?>!</h1>
+    <h1>Search base</h1>
 
-    <a href="20_logout.php">disconnect</a>
-
-    <hr>
-
-    <a href="21_postmaker.php">Posts</a>
-
-    <hr>
-
-    <a href="23_forum.php">Forum</a>
+        <form action="" method="POST">
+        <h2>What would you like to search?</h2>
+        <input type="text" name="nome" placeholder="Post or Profile name" value="">
+        <select name="searchtype" value="">
+            <option>Posts</option>
+            <option>Profiles</option>
+        </select>
+        <button type="submit">Search</button>
+    </form>
 
 </body>
 </html>
