@@ -32,12 +32,17 @@
         <div class="post">
             <h2><?=$post['title']?></h2>
             <p class="ppost"><?=$post['text']?></p>
-            <small>Autor: <?=$autor['nome']?></small>
+            <small>Autor: <a id="aautor" href="26_profile.php?id=<?=$autor['ID']?>"><?=$autor['nome']?></a></small>
         <!--    <img class="photo" src="photo_data/<?=$autor['foto']?>" alt=""> -->
             <br>
             <small>Date: <?=$post['date']?></small>
+            <?php
+            if($autor['ID'] == $_SESSION['id']){
+                echo('<a href="">Delete Post</a>');
+            }
+            ?>
         </div>
-
+ 
  <?php
     }
     ?>

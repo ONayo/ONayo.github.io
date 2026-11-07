@@ -1,5 +1,7 @@
+<?php $idusuario = $_SESSION['id']; ?>
+
 <header>
-    <a href="26_profile.php"><img class="pfp" src="photo_data/<?= $usuario['foto'] ?>"></a>
+    <a href="26_profile.php?id=<?=$idusuario?>"><img class="pfp" src="photo_data/<?= $usuario['foto'] ?>"></a>
     <nav>
         <h2><a href="23_forum.php">Forum</a></h2>    
         <h2><a href="21_postmaker.php">Posts</a></h2>
@@ -7,5 +9,4 @@
         <h2><a href="index.php">Home</a></h2>
         <h2><a href="20_logout.php">Disconnect</a></h2>
     </nav>
-</header> 
-     
+</header>

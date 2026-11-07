@@ -132,18 +132,34 @@ nav{
 }
 .profileDiv{
     display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.maininfo{
+    display: flex;
     flex-direction: row;
-    padding: 0px;
+    gap: 10px;
 }
-.baseInfo{
-    background-color:rgb(23, 128, 122) ;
-    height: 85vh;
-    width: 60vh;
-    margin: 0px;
+.BMS{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
 }
-.changeInfo{
-    height: 85vh;
-    width: 70.5vw;
-    background-color: lightblue;
-    margin: 0px;
+.secinfo{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#aautor{
+    color: black;
+    text-decoration: none;
+}
+#bautor{
+    color: black;
+    text-decoration: none;
+    margin: 25px;
+    font-size: 40px;
+    background-color: rgb(26, 145, 139);
+    padding: 8px;
 }
